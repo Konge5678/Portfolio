@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    background: rgb(97,0,0);
+background: radial-gradient(circle, rgba(97,0,0,1) 0%, rgba(90,0,3,1) 4%, rgba(88,0,4,1) 5%, rgba(84,0,5,1) 7%, rgba(76,0,8,1) 11%, rgba(67,0,11,1) 16%, rgba(58,0,15,1) 21%, rgba(49,0,18,1) 26%, rgba(43,0,20,1) 29%, rgba(41,0,21,1) 30%, rgba(34,0,24,1) 34%, rgba(30,0,25,1) 36%, rgba(23,0,28,1) 40%, rgba(21,0,29,1) 41%, rgba(15,0,31,1) 44%, rgba(10,0,34,1) 44%, rgba(8,0,34,1) 48%, rgba(2,0,36,1) 51%, rgba(6,0,35,1) 53%, rgba(12,0,33,1) 56%, rgba(17,0,31,1) 59%, rgba(25,0,28,1) 63%, rgba(37,0,23,1) 69%, rgba(49,0,19,1) 75%, rgba(66,0,12,1) 84%, rgba(78,0,8,1) 90%, rgba(86,0,5,1) 94%, rgba(97,0,0,1) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
