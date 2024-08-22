@@ -5,7 +5,7 @@ import ExperienceCard from "../components/ExperienceCard";
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen">
-      <div className="w-full lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen">
+      <div className="w-full lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ml-40">
         <PersonCard />
       </div>
       <div className="flex-grow lg:pl-10 mt-40 ml-20 space-y-6">
@@ -20,7 +20,7 @@ export default function Home() {
           tags={[
             { tag: "Consulting", link: "#" },
             { tag: "Development", link: "#" },
-            { tag: "Frontend", link: "#" }
+            { tag: "Frontend", link: "#" },
           ]}
         />
         <ExperienceCard
@@ -33,7 +33,7 @@ export default function Home() {
           tags={[
             { tag: "School", link: "#" },
             { tag: "Learning", link: "#" },
-            { tag: "Teamwork", link: "#" }
+            { tag: "Teamwork", link: "#" },
           ]}
         />
         <ExperienceCard
@@ -46,7 +46,59 @@ export default function Home() {
           tags={[
             { tag: "Customer Support", link: "#" },
             { tag: "Sales", link: "#" },
-            { tag: "Work", link: "#" }
+            { tag: "Work", link: "#" },
+          ]}
+        />
+        <ExperienceCard
+          title="Shop Assistant /"
+          company="Biltema Hamar"
+          duration="2023 - 2024"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          tags={[
+            { tag: "Customer Support", link: "#" },
+            { tag: "Sales", link: "#" },
+            { tag: "Work", link: "#" },
+          ]}
+        />
+        <ExperienceCard
+          title="Shop Assistant /"
+          company="Biltema Hamar"
+          duration="2023 - 2024"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          tags={[
+            { tag: "Customer Support", link: "#" },
+            { tag: "Sales", link: "#" },
+            { tag: "Work", link: "#" },
+          ]}
+        />
+        <ExperienceCard
+          title="Shop Assistant /"
+          company="Biltema Hamar"
+          duration="2023 - 2024"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          tags={[
+            { tag: "Customer Support", link: "#" },
+            { tag: "Sales", link: "#" },
+            { tag: "Work", link: "#" },
+          ]}
+        />
+        <ExperienceCard
+          title="Shop Assistant /"
+          company="Biltema Hamar"
+          duration="2023 - 2024"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          tags={[
+            { tag: "Customer Support", link: "#" },
+            { tag: "Sales", link: "#" },
+            { tag: "Work", link: "#" },
           ]}
         />
       </div>

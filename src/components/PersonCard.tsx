@@ -4,6 +4,8 @@ import PersonCardButton from "./PersonCardButton";
 import React from "react";
 import SocialMediaIcon from "./SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa6";
+import roobetLogo from "../images/RoobetLogo.svg";
 
 export default function PersonCard() {
   return (
@@ -19,21 +21,31 @@ export default function PersonCard() {
       <PersonCardButton text="Blogs" onClick={() => {}} />
       <PersonCardButton text="Contact" onClick={() => {}} />
 
-      <div className="flex space-x-4 mt-6 pt-14">
+      <div className="flex space-x-1 mt-60 pt-14">
         <SocialMediaIcon
-          icon={<FaGithub className="text-white w-10 h-10" />}
+          icon={<FaGithub className="text-white w-8 h-8" />}
           link="https://github.com/Konge5678"
           altText="GitHub"
         />
         <SocialMediaIcon
-          icon={<FaLinkedin className="text-white w-10 h-10" />}
+          icon={<FaLinkedin className="text-white w-8 h-8" />}
           link="https://www.linkedin.com/in/kristian-haugsrud-866b40323/"
           altText="LinkedIn"
         />
         <SocialMediaIcon
-          icon={<FaInstagram className="text-white w-10 h-10" />}
+          icon={<FaInstagram className="text-white w-8 h-8" />}
           link="https://instagram.com"
           altText="Instagram"
+        />
+        <SocialMediaIcon
+          icon={<img src={roobetLogo.src} alt="Roobet" className="w-8 h-8" />}
+          link="https://roobet.com"
+          altText="Roobet"
+        />
+        <SocialMediaIcon
+          icon={<FaSpotify className="text-white w-8 h-8" />}
+          link="https://open.spotify.com/user/f0bqozbaxqianpt5yh14pnq2y"
+          altText="Spotify"
         />
       </div>
     </div>
