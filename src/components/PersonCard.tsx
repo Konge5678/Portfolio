@@ -9,19 +9,20 @@ import roobetLogo from "../images/RoobetLogo.svg";
 
 export default function PersonCard() {
   return (
-    <div className="text-white w-[600px] p-10">
+    <div className="text-white w-[600px] min-h-screen p-10">
       <h1 className="text-6xl py-2">Kristian Haugsrud</h1>
-      <h2 className="py-1 text-2xl">Junior Consultant</h2>
-      <p className="py-3 text-zinc-500 w-80">
+      <h2 className="py-1 text-2xl mt-2">Junior Consultant</h2>
+      <p className="py-3 text-zinc-400 w-80">
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
-      <PersonCardButton text="About" onClick={() => {}} />
-      <PersonCardButton text="Experience" onClick={() => {}} />
-      <PersonCardButton text="Projects" onClick={() => {}} />
-      <PersonCardButton text="Blogs" onClick={() => {}} />
-      <PersonCardButton text="Contact" onClick={() => {}} />
-
-      <div className="flex space-x-1 mt-60 pt-14">
+      <div className="mt-10">
+        <PersonCardButton text="About" onClick={() => {}} />
+        <PersonCardButton text="Experience" onClick={() => {}} />
+        <PersonCardButton text="Projects" onClick={() => {}} />
+        <PersonCardButton text="Blogs" onClick={() => {}} />
+        <PersonCardButton text="Contact" onClick={() => {}} />
+      </div>
+      <div className="flex space-x-1 mt-40 pt-14">
         <SocialMediaIcon
           icon={<FaGithub className="text-white w-8 h-8" />}
           link="https://github.com/Konge5678"
@@ -39,7 +40,7 @@ export default function PersonCard() {
         />
         <SocialMediaIcon
           icon={<img src={roobetLogo.src} alt="Roobet" className="w-8 h-8" />}
-          link="https://roobet.com"
+          link="https://roobet.com/?ref=konge5678"
           altText="Roobet"
         />
         <SocialMediaIcon
