@@ -6,8 +6,19 @@ import SocialMediaIcon from "../SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
 import roobetLogo from "../../Images/RoobetLogo.svg";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function PersonCard() {
+  const handleScroll = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 20, // Adjust the offset as necessary
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="text-white w-[600px] min-h-screen p-10">
       <h1 className="text-6xl py-2">Kristian Haugsrud</h1>
@@ -16,11 +27,11 @@ export default function PersonCard() {
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
       <div className="mt-10">
-        <PersonCardButton text="About" onClick={() => {}} />
-        <PersonCardButton text="Experience" onClick={() => {}} />
-        <PersonCardButton text="Projects" onClick={() => {}} />
-        <PersonCardButton text="Blogs" onClick={() => {}} />
-        <PersonCardButton text="Contact" onClick={() => {}} />
+        <PersonCardButton text="About" onClick={() => handleScroll('about')} />
+        <PersonCardButton text="Experience" onClick={() => handleScroll('experience')} />
+        <PersonCardButton text="Projects" onClick={() => handleScroll('projects')} />
+        <PersonCardButton text="Blogs" onClick={() => handleScroll('blogs')} />
+        <PersonCardButton text="Contact" onClick={() => handleScroll('contact')} />
       </div>
       <div className="flex space-x-1 mt-40 pt-14">
         <SocialMediaIcon
