@@ -1,6 +1,8 @@
-import PersonCard from "../components/PersonCard";
+import PersonCard from "../components/Cards/PersonCard";
 import AboutText from "../components/AboutText";
-import ExperienceCard from "../components/ExperienceCard";
+import ExperienceCard from "../components/Cards/ExperienceCard";
+import CardLink from "../components/CardLink";
+import ProjectCard from "../components/Cards/ProjectCard";
 
 export default function Home() {
   return (
@@ -49,59 +51,41 @@ export default function Home() {
             { tag: "Work", link: "#" },
           ]}
         />
-        <ExperienceCard
-          title="Shop Assistant /"
-          company="Biltema Hamar"
-          duration="2023 - 2024"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        <CardLink title="View full resume" link="" /> 
+        <ProjectCard
+          title="Project 1"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           tags={[
-            { tag: "Customer Support", link: "#" },
-            { tag: "Sales", link: "#" },
-            { tag: "Work", link: "#" },
+            { tag: "React", link: "#" },
+            { tag: "Tailwind", link: "#" },
+            { tag: "Typescript", link: "#" },
           ]}
-        />
-        <ExperienceCard
-          title="Shop Assistant /"
-          company="Biltema Hamar"
-          duration="2023 - 2024"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          image="https://via.placeholder.com/150"
+          date="2024" />
+          <ProjectCard
+          title="Project 1"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           tags={[
-            { tag: "Customer Support", link: "#" },
-            { tag: "Sales", link: "#" },
-            { tag: "Work", link: "#" },
+            { tag: "React", link: "#" },
+            { tag: "Tailwind", link: "#" },
+            { tag: "Typescript", link: "#" },
           ]}
-        />
-        <ExperienceCard
-          title="Shop Assistant /"
-          company="Biltema Hamar"
-          duration="2023 - 2024"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          image="https://via.placeholder.com/150"
+          date="2024" />
+          <ProjectCard
+          title="Project 1"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           tags={[
-            { tag: "Customer Support", link: "#" },
-            { tag: "Sales", link: "#" },
-            { tag: "Work", link: "#" },
+            { tag: "React", link: "#" },
+            { tag: "Tailwind", link: "#" },
+            { tag: "Typescript", link: "#" },
           ]}
-        />
-        <ExperienceCard
-          title="Shop Assistant /"
-          company="Biltema Hamar"
-          duration="2023 - 2024"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          tags={[
-            { tag: "Customer Support", link: "#" },
-            { tag: "Sales", link: "#" },
-            { tag: "Work", link: "#" },
-          ]}
-        />
+          image="https://via.placeholder.com/150"
+          date="2024" />
+          <CardLink title="View all projects" link="" /> 
       </div>
+      
+      
     </div>
   );
 }

@@ -1,11 +1,11 @@
 "use client";
 
-import PersonCardButton from "./PersonCardButton";
+import PersonCardButton from "../Buttons/PersonCardButton";
 import React from "react";
-import SocialMediaIcon from "./SocialMediaIcon";
+import SocialMediaIcon from "../SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
-import roobetLogo from "../images/RoobetLogo.svg";
+import roobetLogo from "../../Images/RoobetLogo.svg";
 
 export default function PersonCard() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ExperienceTag from "./ExperienceCardTag";
+import ExperienceTag from "../Buttons/ExperienceCardTag";
 
 interface ExperienceCardProps {
   title: string;
