@@ -1,23 +1,59 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import PersonCardButton from "../Buttons/PersonCardButton";
-import React from "react";
 import SocialMediaIcon from "../SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
 import roobetLogo from "../../Images/RoobetLogo.svg";
-import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function PersonCard() {
+  const [activeSection, setActiveSection] = useState("");
+
   const handleScroll = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 20, // Adjust the offset as necessary
+        top: element.offsetTop - 20, 
         behavior: "smooth",
       });
     }
   };
+
+  useEffect(() => {
+    const sections = ["about", "experience", "projects", "blogs"];
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3, 
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach((sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
 
   return (
     <div className="text-white w-[600px] min-h-screen p-10">
@@ -27,11 +63,31 @@ export default function PersonCard() {
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
       <div className="mt-10">
-        <PersonCardButton text="About" onClick={() => handleScroll('about')} />
-        <PersonCardButton text="Experience" onClick={() => handleScroll('experience')} />
-        <PersonCardButton text="Projects" onClick={() => handleScroll('projects')} />
-        <PersonCardButton text="Blogs" onClick={() => handleScroll('blogs')} />
-        <PersonCardButton text="Contact" onClick={() => handleScroll('contact')} />
+      <PersonCardButton
+          text="About"
+          onClick={() => handleScroll("about")}
+          isActive={activeSection === "about"}
+        />
+        <PersonCardButton
+          text="Experience"
+          onClick={() => handleScroll("experience")}
+          isActive={activeSection === "experience"}
+        />
+        <PersonCardButton
+          text="Projects"
+          onClick={() => handleScroll("projects")}
+          isActive={activeSection === "projects"}
+        />
+        <PersonCardButton
+          text="Blogs"
+          onClick={() => handleScroll("blogs")}
+          isActive={activeSection === "blogs"}
+        />
+        <PersonCardButton
+          text="Contact"
+          onClick={() => handleScroll("contact")}
+          isActive={activeSection === "contact"}
+        />
       </div>
       <div className="flex space-x-1 mt-40 pt-14">
         <SocialMediaIcon
