@@ -15,7 +15,7 @@ const SocialMediaIcon = ({ icon, link, altText }: SocialMediaIconProps) => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={altText}
-      className="w-16 h-16 flex items-center justify-center rounded-full  hover:bg-zinc-700 transition-colors duration-300 m-2">
+      className="w-16 h-16 flex items-center justify-center rounded-full  hover:bg-yellow-500 transition-colors duration-300 m-2">
       {icon}
     </a>
   );

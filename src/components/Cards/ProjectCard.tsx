@@ -1,6 +1,7 @@
 import React from "react";
 import ExperienceTag from "../Buttons/ExperienceCardTag";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   title: string;
@@ -8,11 +9,12 @@ interface ProjectCardProps {
   tags: { tag: string; link: string }[];
   image: string;
   date: string;
+  githubLink: string; 
 }
 
-const ProjectCard = ({ title, description, tags, image, date }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tags, image, date, githubLink }: ProjectCardProps) => {
   return (
-    <div className="text-white w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
+    <div className="relative text-white w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
       <div className="flex justify-between items-start">
         <p className="text-lg text-zinc-400">{date}</p>
         <div className="ml-4 flex items-center">
@@ -33,6 +35,14 @@ const ProjectCard = ({ title, description, tags, image, date }: ProjectCardProps
           <ExperienceTag key={index} tag={tagItem.tag} link={tagItem.link} />
         ))}
       </div>
+      <a
+        href={githubLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 right-4 text-indigo-300 hover:text-yellow-300 transition-colors duration-300"
+      >
+        <FaGithub className="text-2xl" />
+      </a>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import ExperienceCard from "../components/Cards/ExperienceCard";
 import CardLink from "../components/CardLink";
 import ProjectCard from "../components/Cards/ProjectCard";
 import BlogCard from "../components/Cards/BlogCard";
+import ContactCard from "@/components/Cards/ContactCard";
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" />
+            date="2024" githubLink={""} />
           <ProjectCard
             title="Project 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -77,7 +78,7 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" />
+            date="2024" githubLink={""} />
           <ProjectCard
             title="Project 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -87,7 +88,7 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" />
+            date="2024" githubLink={""} />
           <CardLink title="View all projects" link="/Projects" /> 
         </div>
         <div id="blogs" className="space-y-6 mt-10">
@@ -110,6 +111,9 @@ export default function Home() {
             image="https://via.placeholder.com/150"
             date="2024" />
           <CardLink title="View all blogs" link="/Blogs" /> 
+        </div>
+        <div id="contact" className="space-y-6 mb-10">
+          <ContactCard/>
         </div>
       </div>
     </div>

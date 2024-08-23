@@ -21,7 +21,7 @@ export default function PersonCard() {
   };
 
   useEffect(() => {
-    const sections = ["about", "experience", "projects", "blogs"];
+    const sections = ["about", "experience", "projects", "blogs", "contact"];
     const observerOptions = {
       root: null,
       rootMargin: "0px",
@@ -89,7 +89,7 @@ export default function PersonCard() {
           isActive={activeSection === "contact"}
         />
       </div>
-      <div className="flex space-x-1 mt-40 pt-14">
+      <div className="flex space-x-1 mt-20 mb-30 pt-14">
         <SocialMediaIcon
           icon={<FaGithub className="text-white w-8 h-8" />}
           link="https://github.com/Konge5678"
