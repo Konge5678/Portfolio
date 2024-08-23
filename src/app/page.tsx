@@ -1,3 +1,4 @@
+import Header from "../components/header";
 import PersonCard from "../components/Cards/PersonCard";
 import AboutText from "../components/AboutText";
 import ExperienceCard from "../components/Cards/ExperienceCard";
@@ -8,7 +9,8 @@ import ContactCard from "@/components/Cards/ContactCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <div className="relative flex flex-col lg:flex-row min-h-screen">
+      <Header /> {}
       <div className="w-full lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ml-40">
         <PersonCard />
       </div>
