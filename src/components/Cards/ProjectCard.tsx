@@ -9,10 +9,17 @@ interface ProjectCardProps {
   tags: { tag: string; link: string }[];
   image: string;
   date: string;
-  githubLink: string; 
+  githubLink: string;
 }
 
-const ProjectCard = ({ title, description, tags, image, date, githubLink }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  tags,
+  image,
+  date,
+  githubLink,
+}: ProjectCardProps) => {
   return (
     <div className="relative text-white w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
       <div className="flex justify-between items-start">
@@ -39,8 +46,7 @@ const ProjectCard = ({ title, description, tags, image, date, githubLink }: Proj
         href={githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-4 right-4 text-indigo-300 hover:text-yellow-300 transition-colors duration-300"
-      >
+        className="absolute bottom-4 right-4 text-indigo-300 hover:text-yellow-300 transition-colors duration-300">
         <FaGithub className="text-2xl" />
       </a>
     </div>

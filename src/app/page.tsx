@@ -1,4 +1,3 @@
-import Header from "../components/header";
 import PersonCard from "../components/Cards/PersonCard";
 import AboutText from "../components/AboutText";
 import ExperienceCard from "../components/Cards/ExperienceCard";
@@ -6,11 +5,12 @@ import CardLink from "../components/CardLink";
 import ProjectCard from "../components/Cards/ProjectCard";
 import BlogCard from "../components/Cards/BlogCard";
 import ContactCard from "@/components/Cards/ContactCard";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function Home() {
   return (
     <div className="relative flex flex-col lg:flex-row min-h-screen">
-      <Header /> {}
+      <HamburgerMenu />
       <div className="w-full lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ml-40">
         <PersonCard />
       </div>
@@ -59,7 +59,7 @@ export default function Home() {
             ]}
           />
         </div>
-        <CardLink title="View full resume" link="/Resume" /> 
+        <CardLink title="View full resume" link="/Resume" />
         <div id="projects" className="space-y-6 mt-10">
           <ProjectCard
             title="Super cool project"
@@ -70,7 +70,9 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" githubLink={""} />
+            date="2024"
+            githubLink={""}
+          />
           <ProjectCard
             title="Project 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -80,7 +82,9 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" githubLink={""} />
+            date="2024"
+            githubLink={""}
+          />
           <ProjectCard
             title="Project 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -90,32 +94,37 @@ export default function Home() {
               { tag: "Typescript", link: "#" },
             ]}
             image="https://via.placeholder.com/150"
-            date="2024" githubLink={""} />
-          <CardLink title="View all projects" link="/Projects" /> 
+            date="2024"
+            githubLink={""}
+          />
+          <CardLink title="View all projects" link="/Projects" />
         </div>
         <div id="blogs" className="space-y-6 mt-10">
-          <BlogCard 
+          <BlogCard
             title="Blog 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             image="https://via.placeholder.com/150"
-            date="2024" />
-          <BlogCard 
+            date="2024"
+          />
+          <BlogCard
             title="Blog 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             image="https://via.placeholder.com/150"
-            date="2024" />
-          <BlogCard 
+            date="2024"
+          />
+          <BlogCard
             title="Blog 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             image="https://via.placeholder.com/150"
-            date="2024" />
-          <CardLink title="View all blogs" link="/Blogs" /> 
+            date="2024"
+          />
+          <CardLink title="View all blogs" link="/Blogs" />
         </div>
         <div id="contact" className="space-y-6 mb-10">
-          <ContactCard/>
+          <ContactCard />
         </div>
       </div>
     </div>
