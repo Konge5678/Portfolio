@@ -14,7 +14,7 @@ export default function PersonCard() {
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 20, 
+        top: element.offsetTop - 40,
         behavior: "smooth",
       });
     }
@@ -25,7 +25,7 @@ export default function PersonCard() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, 
+      threshold: 0.3,
     };
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -36,7 +36,10 @@ export default function PersonCard() {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
 
     sections.forEach((sectionId) => {
       const section = document.getElementById(sectionId);
@@ -63,7 +66,7 @@ export default function PersonCard() {
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
       <div className="mt-10">
-      <PersonCardButton
+        <PersonCardButton
           text="About"
           onClick={() => handleScroll("about")}
           isActive={activeSection === "about"}

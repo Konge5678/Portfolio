@@ -22,9 +22,7 @@ export default function HamburgerMenu() {
       <button
         onClick={toggleMenu}
         className="text-white text-3xl focus:outline-none transition-transform duration-300 transform hover:scale-110">
-        <div className="transition-opacity duration-300">
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </div>
+        {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-indigo-950 rounded-lg shadow-xl">

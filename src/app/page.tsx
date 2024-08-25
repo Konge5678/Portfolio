@@ -10,7 +10,6 @@ import HamburgerMenu from "@/components/HamburgerMenu";
 export default function Home() {
   return (
     <div className="relative flex flex-col lg:flex-row min-h-screen">
-      <HamburgerMenu />
       <div className="w-full lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ml-40">
         <PersonCard />
       </div>
