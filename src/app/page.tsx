@@ -7,7 +7,7 @@ import BlogCard from "../components/Cards/BlogCard";
 import ContactCard from "@/components/Cards/ContactCard";
 
 
-// lets style
+
 
 export default function Home() {
   return (

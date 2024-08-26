@@ -28,7 +28,7 @@ const projects = [
 export default function Projects() {
     return (
       <div>
-        <h1 className="text-white text-6xl ml-16">All Projects
+        <h1 className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-white text-5xl">All Projects
         </h1>
         <ProjectList projects={projects} />;
         <div>
