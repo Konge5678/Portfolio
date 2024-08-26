@@ -21,7 +21,7 @@ const ProjectCard = ({
   githubLink,
 }: ProjectCardProps) => {
   return (
-    <div className="relative text-white  lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
+    <div className="relative text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
       <div className="flex justify-between items-start">
         <p className="text-lg text-zinc-400">{date}</p>
         <div className="ml-4 flex items-center">
@@ -37,7 +37,7 @@ const ProjectCard = ({
           {description}
         </p>
       </div>
-      <div className="flex space-x-2 mt-6">
+      <div className="flex flex-wrap gap-2 mt-6">
         {tags.map((tagItem, index) => (
           <ExperienceTag key={index} tag={tagItem.tag} link={tagItem.link} />
         ))}

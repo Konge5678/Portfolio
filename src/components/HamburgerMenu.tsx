@@ -35,6 +35,7 @@ export default function HamburgerMenu() {
           <a
             href="/Resume"
             className="flex items-center px-4 py-2 text-white hover:bg-indigo-800 hover:text-yellow-300 transition-colors duration-300"
+            target="_blank"
             onClick={() => setIsOpen(false)}>
             <FaFileAlt className="mr-2" /> Resume
           </a>

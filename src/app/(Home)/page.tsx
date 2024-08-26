@@ -1,21 +1,17 @@
-import PersonCard from "../components/Cards/PersonCard";
-import AboutText from "../components/AboutText";
-import ExperienceCard from "../components/Cards/ExperienceCard";
-import CardLink from "../components/CardLink";
-import ProjectCard from "../components/Cards/ProjectCard";
-import BlogCard from "../components/Cards/BlogCard";
-import ContactCard from "@/components/Cards/ContactCard";
-
-
-
+import PersonCard from "../../components/Cards/PersonCard";
+import AboutText from "../../components/AboutText";
+import ExperienceCard from "../../components/Cards/ExperienceCard";
+import CardLink from "../../components/CardLink";
+import ProjectCard from "../../components/Cards/ProjectCard";
+import BlogCard from "../../components/Cards/BlogCard";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col lg:flex-row min-h-screen">
-      <div className="max-w-screen-sm lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ml-40">
+    <div className="flex flex-col lg:flex-row min-h-screen">
+      <div className="max-w-screen-sm mx-auto lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen lg:ml-40">
         <PersonCard />
       </div>
-      <div className="flex-grow lg:pl-10 mt-40 ml-20 space-y-6">
+      <div className="flex-grow lg:pl-10 mt-40 mx-6 lg:ml-20 space-y-6">
         <div id="about">
           <AboutText />
         </div>
@@ -124,8 +120,7 @@ export default function Home() {
           />
           <CardLink title="View all blogs" link="/Blogs" />
         </div>
-        <div id="contact" className="space-y-6 mb-10">
-        </div>
+        <div id="contact" className="space-y-6 mb-10"></div>
       </div>
     </div>
   );

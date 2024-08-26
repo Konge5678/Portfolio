@@ -33,7 +33,10 @@ export default function PersonCard() {
         }
       });
     };
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
     sections.forEach((sectionId) => {
       const section = document.getElementById(sectionId);
       if (section) {
@@ -52,8 +55,12 @@ export default function PersonCard() {
 
   return (
     <div className="text-white max-w-screen-sm lg:w-[600px] p-10 mx-auto">
-      <h1 className="text-6xl text-center py-2 lg:text-left">Kristian Haugsrud</h1>
-      <h2 className="py-1 text-2xl mt-2 text-center lg:text-left">Junior Consultant</h2>
+      <h1 className="text-6xl text-center py-2 lg:text-left">
+        Kristian Haugsrud
+      </h1>
+      <h2 className="py-1 text-2xl mt-2 text-center lg:text-left">
+        Junior Consultant
+      </h2>
       <p className="py-3 text-zinc-400 w-80 hidden lg:block mx-auto lg:mx-0">
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
