@@ -1,6 +1,6 @@
 export default function AboutText() {
   return (
-    <div className="w-[600px] flex justify-center mb-20">
+    <div className="max-w-screen-sm flex justify-center mb-20 lg:w-[600px] ">
       <p className="text-white w-[600px] text-left text-xl ">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

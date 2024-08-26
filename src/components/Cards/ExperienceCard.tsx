@@ -20,7 +20,7 @@ const ExperienceCard = ({
   tags,
 }: ExperienceCardProps) => {
   return (
-    <div className="text-white w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
+    <div className="text-white lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
       <div className="flex justify-between items-start">
         <p className="text-lg text-zinc-400">{duration}</p>
         <div className="ml-4 flex items-center">
