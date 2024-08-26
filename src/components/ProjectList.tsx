@@ -1,5 +1,5 @@
-import React from 'react';
-import { MdOutlineArrowOutward } from 'react-icons/md';
+import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 interface Project {
   year: string;
@@ -27,33 +27,37 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
         projects.map((project, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 md:grid-cols-4 text-left gap-4 border-b border-gray-700 py-4"
-          >
+            className="grid grid-cols-1 md:grid-cols-4 text-left gap-4 border-b border-gray-700 py-4">
             <div className="col-span-1">
-              <span className="text-customPurple text-sm block">{project.year}</span>
+              <span className="text-customPurple text-sm block">
+                {project.year}
+              </span>
               <div className="block md:hidden">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-yellow-500 text-lg font-semibold block group hover:text-yellow-400 transition-colors duration-200"
-                >
+                  className="text-yellow-400 text-lg font-semibold block group hover:text-yellow-500 transition-colors duration-200">
                   {project.projectName}
                   <MdOutlineArrowOutward className="inline-block ml-1 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
                 </a>
               </div>
-              <div className="hidden md:block text-yellow-500 text-lg font-semibold">
+              <div className="hidden md:block text-yellow-400 text-lg font-semibold">
                 {project.projectName}
               </div>
             </div>
 
             <div className="hidden md:block col-span-1">
-              <span className="text-gray-400 text-sm">{project.organization}</span>
+              <span className="text-gray-400 text-sm">
+                {project.organization}
+              </span>
             </div>
 
             <div className="hidden md:flex col-span-1 flex-wrap justify-start items-start gap-2">
               {project.technologies.map((tech, index) => (
-                <span key={index} className="bg-customPurple text-white text-sm px-3 py-1 rounded-full mt-2  ">
+                <span
+                  key={index}
+                  className="bg-customPurple text-white text-sm px-3 py-1 rounded-full mt-2  ">
                   {tech}
                 </span>
               ))}
@@ -64,8 +68,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-yellow-500 text-sm block group hover:text-yellow-400 transition-colors duration-200"
-              >
+                className="text-yellow-400 text-sm block group hover:text-yellow-500 transition-colors duration-200">
                 {new URL(project.link).hostname}
                 <MdOutlineArrowOutward className="inline-block ml-1 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
               </a>
@@ -73,7 +76,9 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
           </div>
         ))
       ) : (
-        <div className="text-center text-gray-400 mt-4">No projects available.</div>
+        <div className="text-center text-gray-400 mt-4">
+          No projects available.
+        </div>
       )}
     </div>
   );
