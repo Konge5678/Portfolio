@@ -7,6 +7,8 @@ import BlogCard from "../components/Cards/BlogCard";
 import ContactCard from "@/components/Cards/ContactCard";
 import HamburgerMenu from "@/components/HamburgerMenu";
 
+// lets style
+
 export default function Home() {
   return (
     <div className="relative flex flex-col lg:flex-row min-h-screen">
