@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         tagTextBlue: "#62b1ae",
         tagBgBlue: "#122d40",
-        customBlue: "#1E40AF", // Add your custom color here
+        customBlue: "#1E40AF",
+        customPurple: "#6e56cf", 
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

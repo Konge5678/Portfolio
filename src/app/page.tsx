@@ -125,7 +125,6 @@ export default function Home() {
           <CardLink title="View all blogs" link="/Blogs" />
         </div>
         <div id="contact" className="space-y-6 mb-10">
-          <ContactCard />
         </div>
       </div>
     </div>
