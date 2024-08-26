@@ -59,13 +59,13 @@ export default function PersonCard() {
   }, []);
 
   return (
-    <div className="text-white w-[600px] min-h-screen p-10">
-      <h1 className="text-6xl py-2">Kristian Haugsrud</h1>
-      <h2 className="py-1 text-2xl mt-2">Junior Consultant</h2>
-      <p className="py-3 text-zinc-400 w-80">
+    <div className="text-white w-full lg:w-[600px] p-10">
+      <h1 className="text-6xl text-center py-2 lg:text-left ">Kristian Haugsrud</h1>
+      <h2 className="py-1 text-2xl mt-2 text-center lg:text-left">Junior Consultant</h2>
+      <p className="py-3 text-zinc-400 w-80 hidden lg:block">
         “A dollar won is twice as sweet as a dollar earned.” – Paul Newman
       </p>
-      <div className="mt-10">
+      <div className="mt-10 hidden lg:block items-center">
         <PersonCardButton
           text="About"
           onClick={() => handleScroll("about")}
