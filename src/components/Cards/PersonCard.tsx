@@ -54,7 +54,7 @@ export default function PersonCard() {
   }, []);
 
   return (
-    <div className="text-white max-w-screen-sm lg:w-[600px] p-10 mx-auto">
+    <div className="text-white">
       <h1 className="text-6xl text-center py-2 lg:text-left">
         Kristian Haugsrud
       </h1>

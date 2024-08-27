@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export default function Tag({ tag }) {
   return (
-    <span className="bg-indigo-700 text-white text-sm px-3 py-1 rounded-full">
+    <span className=" border-2 border-yellow-400 text-white text-sm px-3 py-1 rounded-full">
       {tag}
     </span>
   );

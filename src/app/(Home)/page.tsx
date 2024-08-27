@@ -7,15 +7,15 @@ import BlogCard from "../../components/Cards/BlogCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-around lg:flex-row min-h-screen">
-      <div className="max-w-screen-sm mx-auto lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen ">
+    <div className="min-h-screen mx-8 md:mx-20 lg:mx-0 lg:flex lg:justify-around lg:flex-row">
+      <div className="lg:sticky lg:top-40 lg:h-max">
         <PersonCard />
       </div>
-      <div className="flex-grow lg:pl-10 mt-10 lg:mt-40 space-y-6">
+      <div className="lg:mt-40">
         <div id="about">
           <AboutText />
         </div>
-        <div id="experience" className="space-y-6 mt-10">
+        <div id="experience" className="flex flex-col gap-6">
           <ExperienceCard
             title="Junior Consultant /"
             company="Inmeta"
@@ -55,9 +55,9 @@ export default function Home() {
               { tag: "Work", link: "#" },
             ]}
           />
+          <CardLink title="View full resume" link="/Resume" newTab={true} />
         </div>
-        <CardLink title="View full resume" link="/Resume" newTab={true} />
-        <div id="projects" className="space-y-6 mt-10">
+        <div id="projects" className="flex flex-col gap-6 mt-10">
           <ProjectCard
             title="Super cool project"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -96,7 +96,7 @@ export default function Home() {
           />
           <CardLink title="View all projects" link="/Projects" />
         </div>
-        <div id="blogs" className="space-y-6 mt-10">
+        <div id="blogs" className="flex flex-col gap-6 my-10">
           <BlogCard
             title="Blog 1"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -120,7 +120,7 @@ export default function Home() {
           />
           <CardLink title="View all blogs" link="/Blogs" />
         </div>
-        <div id="contact" className="space-y-6 mb-10"></div>
+        <div id="contact" />
       </div>
     </div>
   );

@@ -32,7 +32,6 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
             rel="noopener noreferrer"
             className="block group hover:bg-indigo-900 transition-colors duration-300 no-underline">
             <div className="grid grid-cols-1 md:grid-cols-4 text-left gap-4 border-b border-purple-400 py-4">
-              
               <div className="col-span-1">
                 <span className="text-purple-400 text-sm block group-hover:tex-purple-500">
                   {project.year}
