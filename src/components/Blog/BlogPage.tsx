@@ -12,19 +12,48 @@ export default function BlogPage() {
 
   const blogs = [
     {
-      id: 1,
-      title: 'Title for blog 1',
-      date: 'Date when posted',
-      tags: ['Tag1', 'Tag2', 'Tag3', 'Tag4'],
-      link: '/blog/1',
-    },
-    {
-      id: 2,
-      title: 'Title for blog 2',
-      date: 'Date when posted',
-      tags: ['Tag1', 'Tag2', 'Tag3', 'Tag4'],
-      link: '/blog/2',
-    },
+        id: 1,
+        title: 'How to Create an Awesome Portfolio',
+        date: '27.08.24',
+        tags: ['Blog', 'Development', 'Tips'],
+        link: '/Blogs/1',
+      },
+      {
+        id: 2,
+        title: 'Top 5 Web Development Trends for 2024',
+        date: '29.08.24',
+        tags: ['Web Development', 'Trends', 'Technology'],
+        link: '/Blogs/2',
+      },
+      {
+        id: 3,
+        title: 'Boosting Your Productivity: A Developer’s Guide',
+        date: '02.09.24',
+        tags: ['Productivity', 'Development', 'Guides'],
+        link: '/Blogs/3',
+      },
+      {
+        id: 4,
+        title: 'Understanding Cloud Computing: The Basics',
+        date: '05.09.24',
+        tags: ['Cloud Computing', 'Basics', 'Technology'],
+        link: '/Blogs/4',
+      },
+      {
+        id: 5,
+        title: 'The Future of AI in Web Development',
+        date: '10.09.24',
+        tags: ['AI', 'Web Development', 'Future'],
+        link: '/Blogs/5',
+      },
+      {
+        id: 6,
+        title: 'A Beginner’s Guide to Version Control with Git',
+        date: '12.09.24',
+        tags: ['Git', 'Version Control', 'Beginner'],
+        link: '/Blogs/6',
+      },
+      
   ];
 
   const filteredBlogs = blogs.filter(blog =>
@@ -34,7 +63,7 @@ export default function BlogPage() {
 
   return (
     <div className="container mx-auto py-8 px-4">
-      <h1 className="text-center text-4xl mb-8">My Blogs</h1>
+      <h1 className="text-center text-4xl text-white mb-8">My Blogs</h1>
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <BlogPageLayout>
         {filteredBlogs.length > 0 ? (

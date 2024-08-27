@@ -11,11 +11,11 @@ interface BlogCardProps {
 export default function BlogCard({ title, date, tags, onClick }: BlogCardProps) {
   return (
     <div
-      className="p-6 bg-indigo-950 text-white rounded-lg shadow-lg hover:bg-indigo-900 transition-colors duration-300 cursor-pointer"
+      className="p-6 bg-indigo-950 text-yellow-400 hover:text-yellow-500 rounded-lg shadow-lg hover:bg-indigo-900 transition-colors duration-300 cursor-pointer"
       onClick={onClick} 
     >
       <div className="mb-4">
-        <p className="text-sm text-gray-400">{date}</p>
+        <p className="text-sm text-purple-400">{date}</p>
         <h2 className="text-2xl font-semibold">{title}</h2>
       </div>
       <div className="flex flex-wrap gap-2">
