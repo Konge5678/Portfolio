@@ -1,7 +1,7 @@
 export default function AboutText() {
   return (
-    <div className="max-w-screen-sm flex justify-center mb-20 lg:w-[600px] ">
-      <p className="text-white w-[600px] text-left text-xl ">
+    <div className=" flex flex-wrap justify-center mb-20 lg:w-[600px] ">
+      <p className="text-white lg:w-[600px] text-center lg:text-left text-xl ">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

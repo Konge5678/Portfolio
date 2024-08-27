@@ -11,7 +11,7 @@ export default function Home() {
       <div className="max-w-screen-sm mx-auto lg:w-auto lg:sticky lg:top-10 lg:min-w-[600px] lg:h-screen lg:ml-40">
         <PersonCard />
       </div>
-      <div className="flex-grow lg:pl-10 mt-40 mx-6 lg:ml-20 space-y-6">
+      <div className="flex-grow lg:pl-10 mt-10 lg:mt-40 mx-6 lg:ml-20 space-y-6">
         <div id="about">
           <AboutText />
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
             ]}
           />
         </div>
-        <CardLink title="View full resume" link="/Resume" />
+        <CardLink title="View full resume" link="/Resume" newTab={true}  />
         <div id="projects" className="space-y-6 mt-10">
           <ProjectCard
             title="Super cool project"

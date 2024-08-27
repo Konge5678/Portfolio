@@ -1,7 +1,11 @@
+import BlogPage from "@/components/Blog/BlogPage";
+
+
+
 export default function Blogs() {
   return (
     <div>
-      <h1 className="text-white">Blog</h1>
+      <BlogPage />
     </div>
   );
 }

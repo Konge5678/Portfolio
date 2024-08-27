@@ -29,7 +29,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
             key={index}
             className="grid grid-cols-1 md:grid-cols-4 text-left gap-4 border-b border-gray-700 py-4">
             <div className="col-span-1">
-              <span className="text-customPurple text-sm block">
+              <span className="text-purple-400 text-sm block">
                 {project.year}
               </span>
               <div className="block md:hidden">
