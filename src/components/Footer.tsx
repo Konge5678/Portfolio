@@ -22,8 +22,7 @@ const Footer = () => {
               <p className="text-lg text-zinc-300">kris.haugsrud@gmail.com</p>
               <button
                 className="text-indigo-300 hover:text-yellow-300 transition-colors duration-300 mt-2"
-                onClick={() => handleCopy("kris.haugsrud@gmail.com", "email")}
-              >
+                onClick={() => handleCopy("kris.haugsrud@gmail.com", "email")}>
                 <FaCopy className="text-xl" />
               </button>
             </div>
@@ -41,13 +40,14 @@ const Footer = () => {
               <p className="text-lg text-zinc-300">+47 941 74 808</p>
               <button
                 className="text-indigo-300 hover:text-yellow-300 transition-colors duration-300 mt-2"
-                onClick={() => handleCopy("+47 941 74 808", "phone")}
-              >
+                onClick={() => handleCopy("+47 941 74 808", "phone")}>
                 <FaCopy className="text-xl" />
               </button>
             </div>
             {copied === "phone" && (
-              <p className="text-green-400 text-sm mt-2">Phone number copied!</p>
+              <p className="text-green-400 text-sm mt-2">
+                Phone number copied!
+              </p>
             )}
           </div>
         </div>
@@ -56,7 +56,8 @@ const Footer = () => {
 
         <div className="text-center">
           <p className="text-lg text-zinc-300">
-            &copy; {new Date().getFullYear()} All rights reserved. Kristian Haugsrud
+            &copy; {new Date().getFullYear()} All rights reserved. Kristian
+            Haugsrud
           </p>
         </div>
       </div>
