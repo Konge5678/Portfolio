@@ -3,53 +3,53 @@ import ProjectList from "@/components/ProjectList";
 const projects = [
   {
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Awesome Project X',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['React.js', 'JavaScript', 'CSS', 'Firebase'],
+    link: 'https://ProjectX.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Creative Web Solutions',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['Next.js', 'GraphQL', 'Styled Components', 'Contentful'],
+    link: 'https://CreativeWeb.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Innovative Design Hub',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['Vue.js', 'TypeScript', 'SCSS', 'Prismic'],
+    link: 'https://DesignHub.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Dynamic Content Platform',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['Angular', 'JavaScript', 'LESS', 'Strapi'],
+    link: 'https://ContentPlatform.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Modern Web Architecture',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['Svelte', 'TypeScript', 'CSS Modules', 'Sanity'],
+    link: 'https://WebArchitecture.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Next-Gen Interface',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
-  {
+    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Storyblok'],
+    link: 'https://NextGenInterface.com',
+},
+{
     year: '2023-2024',
-    projectName: 'Kjempe kult prosjekt',
+    projectName: 'Cutting-Edge Tech Portal',
     organization: 'Inmeta',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Contentful'],
-    link: 'https://KULLINK.COM',
-  },
+    technologies: ['Gatsby', 'JavaScript', 'Tailwind CSS', 'DatoCMS'],
+    link: 'https://TechPortal.com',
+},
   
 ];
 
