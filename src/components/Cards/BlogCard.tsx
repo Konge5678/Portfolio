@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -6,13 +8,21 @@ interface BlogCardProps {
   description: string;
   image: string;
   date: string;
+  blogLink: string;
 }
 
-const BlogCard = ({ title, description, image, date }: BlogCardProps) => {
+const BlogCard = ({ title, description, image, date, blogLink }: BlogCardProps) => {
+  const handleCardClick = () => {
+    window.open(blogLink, '_blank');
+  };
+
   return (
-    <div className="text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
+    <div
+      className="text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300 cursor-pointer"
+      onClick={handleCardClick}
+    >
       <div className="flex">
-        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4 flex flex-wrap object-contain " />
+        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4 flex flex-wrap object-contain" />
         <div className="flex flex-col justify-between w-full">
           <div className="flex justify-between items-start">
             <p className="text-lg text-zinc-400 group-hover:text-yellow-300 transition-colors duration-300">

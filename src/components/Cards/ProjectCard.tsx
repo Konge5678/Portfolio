@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ExperienceTag from "../Buttons/ExperienceCardTag";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -10,6 +12,7 @@ interface ProjectCardProps {
   image: string;
   date: string;
   githubLink: string;
+  projectLink: string;
 }
 
 const ProjectCard = ({
@@ -19,9 +22,18 @@ const ProjectCard = ({
   image,
   date,
   githubLink,
+  projectLink,
 }: ProjectCardProps) => {
+
+  const handleCardClick = () => {
+    window.open(projectLink, '_blank');
+  };
+
   return (
-    <div className="relative text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
+    <div
+      className="relative text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300 cursor-pointer"
+      onClick={handleCardClick}
+    >
       <div className="flex justify-between items-start">
         <p className="text-lg text-zinc-400">{date}</p>
         <div className="ml-4 flex items-center">
