@@ -16,7 +16,7 @@ export default function BlogPage() {
         title: 'How to Create an Awesome Portfolio',
         date: '27.08.24',
         tags: ['Blog', 'Development', 'Tips'],
-        link: '/Blogs/1',
+        link: '/Blogs/TestBlog',
       },
       {
         id: 2,

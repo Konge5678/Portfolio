@@ -55,7 +55,7 @@ const projects = [
 
 export default function Projects() {
     return (
-      <div>
+      <div className="min-h-screen">
         <h1 className="max-w-6-screen mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:mx-10 text-white text-5xl">All Projects
         </h1>
         <ProjectList projects={projects} />;

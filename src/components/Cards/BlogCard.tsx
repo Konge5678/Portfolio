@@ -12,7 +12,7 @@ const BlogCard = ({ title, description, image, date }: BlogCardProps) => {
   return (
     <div className="text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300">
       <div className="flex">
-        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4 flex flex-wrap" />
+        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4 flex flex-wrap object-contain " />
         <div className="flex flex-col justify-between w-full">
           <div className="flex justify-between items-start">
             <p className="text-lg text-zinc-400 group-hover:text-yellow-300 transition-colors duration-300">

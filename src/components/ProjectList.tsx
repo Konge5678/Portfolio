@@ -37,12 +37,12 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
                   {project.year}
                 </span>
                 <div className="block md:hidden">
-                  <span className="text-yellow-400 text-lg font-semibold block 0">
+                  <span className="text-gray-300 text-lg font-semibold block 0">
                     {project.projectName}
                     <MdOutlineArrowOutward className="inline-block ml-1 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
                   </span>
                 </div>
-                <div className="hidden md:block text-yellow-400 text-lg font-semibold">
+                <div className="hidden md:block text-gray-300 text-lg font-semibold">
                   {project.projectName}
                 </div>
               </div>

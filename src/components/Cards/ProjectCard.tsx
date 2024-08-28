@@ -32,7 +32,7 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="mt-4 flex">
-        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4" />
+        <img src={image} alt={title} className="w-1/3 rounded-lg mr-4 object-contain" />
         <p className="text-zinc-300 text-justify group-hover:text-indigo-200 transition-colors duration-300">
           {description}
         </p>

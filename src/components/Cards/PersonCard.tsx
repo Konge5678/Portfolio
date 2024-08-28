@@ -55,7 +55,7 @@ export default function PersonCard() {
 
   return (
     <div className="text-white">
-      <h1 className="text-6xl text-center py-2 lg:text-left">
+      <h1 className="text-6xl text-center py-2 lg:text-lef">
         Kristian Haugsrud
       </h1>
       <h2 className="py-1 text-2xl mt-2 text-center lg:text-left">
