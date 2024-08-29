@@ -29,6 +29,10 @@ const ProjectCard = ({
     window.open(projectLink, '_blank');
   };
 
+  const handleGithubClick = (event: React.MouseEvent) => {
+    event.stopPropagation();
+  };
+
   return (
     <div
       className="relative text-white flex flex-wrap lg:w-[600px] p-6 bg-indigo-950 rounded-lg group hover:bg-indigo-900 transition-colors duration-300 cursor-pointer"
@@ -58,7 +62,9 @@ const ProjectCard = ({
         href={githubLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-4 right-4 text-indigo-300 hover:text-yellow-300 transition-colors duration-300">
+        className="absolute bottom-4 right-4 text-indigo-300 hover:text-yellow-300 transition-colors duration-300"
+        onClick={handleGithubClick}
+      >
         <FaGithub className="text-2xl" />
       </a>
     </div>

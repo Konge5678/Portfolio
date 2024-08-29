@@ -4,7 +4,7 @@ import ExperienceCard from "../../components/Cards/ExperienceCard";
 import CardLink from "../../components/CardLink";
 import ProjectCard from "../../components/Cards/ProjectCard";
 import BlogCard from "../../components/Cards/BlogCard";
-import TimerImage from "../../public/images/Timer.png";
+import TimerImage from "../../Images/Timer.png";
 
 export default function Home() {
   return (
@@ -66,7 +66,7 @@ export default function Home() {
         <div id="projects" className="flex flex-col gap-6 mt-10">
                   <ProjectCard
             title="Poke search"
-            description="I created the Pokémon Search project to learn API integration. This React app uses the PokéAPI to let users search for Pokémon by name or 
+            description="I made the Pokémon Search project to learn API integration. This React app uses the PokéAPI to let users search for Pokémon by name or 
             ID, displaying details like type, abilities, and stats. Built with React, Tailwind, and JavaScript, it offers a simple interface and showcases skills
              in fetching and displaying dynamic data."
             tags={[
@@ -77,8 +77,8 @@ export default function Home() {
             ]}
             image="https://github.com/Konge5678/Pokemon-Search/raw/main/public/Poke-Search1.png"
             date="2024"
-            githubLink="https://github.com/yourusername/super-cool-project"
-            projectLink="https://yourwebsite.com/super-cool-project"
+            githubLink="https://github.com/Konge5678/Pokemon-Search"
+            projectLink=""
           />
 
           <ProjectCard
@@ -91,7 +91,7 @@ export default function Home() {
               { tag: "Electron", link: "#" },
               { tag: "JavaScript", link: "#" },
             ]}
-            image="../public/images/Timer.png"
+            image="https://www.shareicon.net/download/2017/04/28/885360_clock.svg"
             date="2024"
             githubLink="https://github.com/Konge5678/Timer-App"
             projectLink=""
