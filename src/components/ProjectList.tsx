@@ -13,6 +13,14 @@ interface ProjectListProps {
   projects?: Project[];
 }
 
+const getHostname = (url: string) => {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return url;
+  }
+};
+
 const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
   return (
     <div className="max-w-6-screen mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:mx-10">
@@ -65,7 +73,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects = [] }) => {
 
               <div className="hidden md:block col-span-1">
                 <span className="text-yellow-400 text-sm block group-hover:text-yellow-300 transition-colors duration-200">
-                  {new URL(project.link).hostname}
+                  {getHostname(project.link)}
                   <MdOutlineArrowOutward className="inline-block ml-1 group-hover:transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
                 </span>
               </div>

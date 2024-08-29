@@ -62,7 +62,7 @@ export default function BlogPage() {
   );
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="container mx-auto py-8 px-4 ">
       <h1 className="text-center text-4xl text-white mb-8">My Blogs</h1>
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <BlogPageLayout>

@@ -91,7 +91,7 @@ export default function PersonCard() {
           isActive={activeSection === "contact"}
         />
       </div>
-      <div className="flex justify-center lg:justify-start space-x-1 mt-20 lg:mb-30 pt-14">
+      <div className="flex justify-center lg:justify-start space-x-1 mb-20 lg:mb-32 pt-14">
         <SocialMediaIcon
           icon={<FaGithub className="text-white w-8 h-8" />}
           link="https://github.com/Konge5678"

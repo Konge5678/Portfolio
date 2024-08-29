@@ -4,6 +4,7 @@ import ExperienceCard from "../../components/Cards/ExperienceCard";
 import CardLink from "../../components/CardLink";
 import ProjectCard from "../../components/Cards/ProjectCard";
 import BlogCard from "../../components/Cards/BlogCard";
+import TimerImage from "../../public/images/Timer.png";
 
 export default function Home() {
   return (
@@ -64,31 +65,36 @@ export default function Home() {
         </div>
         <div id="projects" className="flex flex-col gap-6 mt-10">
                   <ProjectCard
-            title="Super Cool Project"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title="Poke search"
+            description="I created the Pokémon Search project to learn API integration. This React app uses the PokéAPI to let users search for Pokémon by name or 
+            ID, displaying details like type, abilities, and stats. Built with React, Tailwind, and JavaScript, it offers a simple interface and showcases skills
+             in fetching and displaying dynamic data."
             tags={[
               { tag: "React", link: "#" },
               { tag: "Tailwind", link: "#" },
-              { tag: "TypeScript", link: "#" },
+              { tag: "Javascript", link: "#" },
+              { tag: "API", link: "#" },
             ]}
-            image="https://via.placeholder.com/150"
+            image="https://github.com/Konge5678/Pokemon-Search/raw/main/public/Poke-Search1.png"
             date="2024"
             githubLink="https://github.com/yourusername/super-cool-project"
             projectLink="https://yourwebsite.com/super-cool-project"
           />
 
           <ProjectCard
-            title="Amazing Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title="Timer app"
+            description="I created the Timer App with Electron because I wanted to try making a desktop application. It lets 
+            users set, start, pause, and reset timers with an intuitive interface. Built using React and Electron, it was a 
+            hands-on way to explore desktop app development and manage state and time-based events in a dynamic UI."
             tags={[
-              { tag: "Next.js", link: "#" },
-              { tag: "Chakra UI", link: "#" },
+              { tag: "React", link: "#" },
+              { tag: "Electron", link: "#" },
               { tag: "JavaScript", link: "#" },
             ]}
-            image="https://via.placeholder.com/150"
-            date="2023"
-            githubLink="https://github.com/yourusername/amazing-project-1"
-            projectLink="https://yourwebsite.com/amazing-project-1"
+            image="../public/images/Timer.png"
+            date="2024"
+            githubLink="https://github.com/Konge5678/Timer-App"
+            projectLink=""
           />
 
           <ProjectCard

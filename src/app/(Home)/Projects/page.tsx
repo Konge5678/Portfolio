@@ -6,7 +6,7 @@ const projects = [
     projectName: 'Awesome Project X',
     organization: 'Inmeta',
     technologies: ['React.js', 'JavaScript', 'CSS', 'Firebase'],
-    link: 'https://ProjectX.com',
+    link: '/Projects/TestProject',
 },
 {
     year: '2023-2024',

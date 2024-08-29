@@ -26,10 +26,12 @@ export default function TestBlog() {
   };
 
   return (
-    <div className="flex flex-col mx-auto py-8 px-4">
+    <div className="flex flex-col mx-auto py-8 px-4 ">
       <a href='/Blogs' className="text-gray-400 text-left hover:text-yellow-300 transition-colors duration-300 mb-4 cursor-pointer">
         ← Back to Blog Archive
       </a>
+
+      <div className='bg-indigo-950 rounded-lg p-10 '>
       <h1 className="text-4xl font-bold text-white mb-2">{blogPost.title}</h1>
       <p className="text-lg text-gray-400 mb-6">{blogPost.author}</p>
       <div className="flex space-x-4 mb-6">
@@ -70,6 +72,7 @@ export default function TestBlog() {
           <p key={index}>{paragraph.trim()}</p>
         ))}
       </div>
+        </div>
     </div>
   );
 }
