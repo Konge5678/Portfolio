@@ -3,6 +3,8 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+
 
 export default function TestBlog() {
 
