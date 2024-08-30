@@ -83,7 +83,7 @@ export default function Home() {
 
           <ProjectCard
             title="Timer app"
-            description="I created the Timer App with Electron because I wanted to try making a desktop application. It lets 
+            description="I made the Timer App with Electron because I wanted to try making a desktop application. It lets 
             users set, start, pause, and reset timers with an intuitive interface. Built using React and Electron, it was a 
             hands-on way to explore desktop app development and manage state and time-based events in a dynamic UI."
             tags={[

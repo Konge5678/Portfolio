@@ -2,7 +2,7 @@ import React from "react";
 
 const TestProject: React.FC = () => {
   return (
-    <div className="flex flex-col bg-purple-900 text-white rounded-lg m-10 lg:mx-40 lg:mt-20">
+    <div className="flex flex-col bg-indigo-950 text-white rounded-lg m-10 lg:mx-40 lg:mt-20">
       <a
         href="/Projects"
         className="text-purple-400 hover:text-yellow-400 transition-colors duration-200 mb-4 p-6">
@@ -10,7 +10,7 @@ const TestProject: React.FC = () => {
       </a>
 
       <h1 className="text-4xl font-bold mb-4 text-center text-yellow-400">
-        Project Title
+        Cool Project
       </h1>
 
       <div className="bg-gray-700 mx-10 lg:mx-40 h-64 lg:h-auto lg:max-h-[600px] flex items-center justify-center mb-6 rounded overflow-hidden">
