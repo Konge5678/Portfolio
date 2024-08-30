@@ -5,7 +5,6 @@ import PersonCardButton from "../Buttons/PersonCardButton";
 import SocialMediaIcon from "../SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
-import roobetLogo from "../../Images/RoobetLogo.svg";
 
 export default function PersonCard() {
   const [activeSection, setActiveSection] = useState("");
@@ -108,7 +107,7 @@ export default function PersonCard() {
           altText="Instagram"
         />
         <SocialMediaIcon
-          icon={<img src={roobetLogo.src} alt="Roobet" className="w-8 h-8" />}
+          icon={<img src={"/RoobetLogo.svg"} alt="Roobet" className="w-8 h-8" />}
           link="https://roobet.com/?ref=konge5678"
           altText="Roobet"
         />
