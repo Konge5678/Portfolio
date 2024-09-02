@@ -12,7 +12,7 @@ import { LandingPage } from "@/types/landing-page.types";
 
 export default function HomeView(page: LandingPage) {
   return (
-    <div className="min-h-screen mx-8 md:mx-20 lg:mx-0 lg:flex lg:justify-around lg:flex-row">
+    <div className="min-h-screen mx-8 md:mx-20 lg:mx-0 lg:flex lg:justify-around lg:flex-row w-full">
       <div className="lg:sticky lg:top-40 lg:h-max">
         <PersonCard {...page} />
       </div>
