@@ -5,8 +5,9 @@ import PersonCardButton from "../Buttons/PersonCardButton";
 import SocialMediaIcon from "../SocialMediaIcon";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
+import { LandingPage } from "@/types/landing-page.types";
 
-export default function PersonCard() {
+export default function PersonCard({title}: LandingPage) {
   const [activeSection, setActiveSection] = useState("");
   const handleScroll = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -55,7 +56,7 @@ export default function PersonCard() {
   return (
     <div className="text-white">
       <h1 className="text-6xl text-center py-2 lg:text-lef">
-        Kristian Haugsrud
+        {title}
       </h1>
       <h2 className="py-1 text-2xl mt-2 text-center lg:text-left">
         Junior Consultant
