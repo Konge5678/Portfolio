@@ -4,6 +4,7 @@ import React from "react";
 import ExperienceTag from "../Buttons/ExperienceCardTag";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { Project } from "@/types/project-types";
 
 interface ProjectCardProps {
   title: string;

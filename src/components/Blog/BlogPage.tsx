@@ -5,7 +5,7 @@ import BlogPageLayout from './BlogPageLayout';
 import SearchBar from './SearchBar';
 import BlogCard from './BlogCard';
 import { useRouter } from 'next/navigation';
-import { Blog } from '@/types/blog.types';
+import { Blog } from '@/types/blog-types';
 
 export default function BlogPage({ blogs }: { blogs: Blog[] }) {
   const [searchQuery, setSearchQuery] = useState('');
