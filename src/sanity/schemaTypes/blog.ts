@@ -22,10 +22,24 @@ export const blog = defineType({
             },
         },
         {
+            name: "author",
+            type: "string",
+        },
+        {
             name: "tags",
             type: "array",
             of: [{type: "reference", to: [{type: "tag"}]}],
         },
+        {
+            name: "image",
+            type: "image",
+        },
+        {
+            name: "content",
+            type: "array",
+            of: [{type: "block"}]  
+        },
+  
         
     ]
 });
