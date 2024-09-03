@@ -2,7 +2,7 @@ interface ButtonProps {
   text: string;
   className?: string;
   onClick: () => void;
-  isActive?: boolean; // Add this prop
+  isActive?: boolean;
 }
 
 const Button = ({ text, onClick, className, isActive }: ButtonProps) => {

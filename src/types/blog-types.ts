@@ -5,4 +5,7 @@ export type Blog = {
   date: string;
   tags?: {name: string, slug: string }[];
   slug: string;
+  content: string;
+  image: string;
+  author: string;
 } & SanityDocument;
