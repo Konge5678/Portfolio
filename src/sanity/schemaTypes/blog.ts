@@ -1,4 +1,4 @@
-import { defineType } from "sanity";
+import { defineType, defineField } from "sanity";
 
 export const blog = defineType({
     name: "blog",
@@ -34,11 +34,11 @@ export const blog = defineType({
             name: "image",
             type: "image",
         },
-        {
-            name: "content",
-            type: "array",
-            of: [{type: "block"}]  
-        },
+        
+        defineField({
+            name: 'content',
+            type: 'blockContent',
+          }),
   
         
     ]
