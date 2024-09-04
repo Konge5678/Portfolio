@@ -17,16 +17,16 @@ export default function BlogPage({ blogs }: { blogs: Blog[] }) {
   );
 
   return (
-    <div className="container mx-auto py-8 px-4 ">
+    <div className="container mx-auto py-8 px-4">
       <h1 className="text-center text-4xl text-white mb-8">My Blogs</h1>
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <BlogPageLayout>
         {filteredBlogs.length > 0 ? (
           filteredBlogs.map(blog => (
             <BlogCard
-              key={blog.id}
-                {...blog}
-              />
+              key={blog.id} // Ensure each BlogCard has a unique key
+              {...blog}
+            />
           ))
         ) : (
           <p className="text-center text-xl text-gray-500">No blogs found.</p>

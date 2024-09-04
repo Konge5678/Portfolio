@@ -2,7 +2,7 @@ import { Refractor, registerLanguage } from "react-refractor";
 import js from "refractor/lang/javascript";
 import ts from "refractor/lang/typescript";
 import tsx from "refractor/lang/tsx";
-import type { CodeBlock as CodeBlockType } from "@common/types/blocks.types";
+import type { CodeBlock as CodeBlockType } from "@/types/blocks.types";
 import { CheckIcon, CopyIcon } from "lucide-react";
 import { useState } from "react";
 
@@ -38,7 +38,6 @@ const CodeBlock = (props: CodeBlockType) => {
 				</button>
 			</div>
 			<Refractor
-				// In this example, `props` is the value of a `code` field
 				language={"javascript"}
 				value={props.code}
 				markers={props.highlightedLines}
