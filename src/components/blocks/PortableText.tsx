@@ -4,10 +4,12 @@ import CodeBlock from "./CodeBlock";
 import type { CodeBlock as CodeBlockType } from "@/types/blocks.types";
 import { urlFor } from "@/sanity/lib/image";
 
-export default function PortableText({ value }: { value: SanityBlockContent }) {
+export default function PortableText({ value }: { value: SanityBlockContent | string }) {
+    const content = typeof value === 'string' ? JSON.parse(value) : value;
+
     return (
         <NativePortableText
-            value={value}
+            value={content}
             components={{
                 types: {
                     code: ({ value }: { value: CodeBlockType }) => {
