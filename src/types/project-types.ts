@@ -1,4 +1,5 @@
 import { SanityDocument } from "next-sanity";
+import type { SanityBlockContent } from "@/types/root.types";
 
 export type Project = {
   title: string;
@@ -7,7 +8,7 @@ export type Project = {
   madeAt: string; 
   tags?: {name: string, slug: string }[];
   link: string;
-  description: string;
+  content: SanityBlockContent;
   image: string;
   slug: string;
 } & SanityDocument;

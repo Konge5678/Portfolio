@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React, { useState } from 'react';
 import BlogPageLayout from './BlogPageLayout';
@@ -24,7 +24,7 @@ export default function BlogPage({ blogs }: { blogs: Blog[] }) {
         {filteredBlogs.length > 0 ? (
           filteredBlogs.map(blog => (
             <BlogCard
-              key={blog.id} // Ensure each BlogCard has a unique key
+              key={blog._id} 
               {...blog}
             />
           ))
