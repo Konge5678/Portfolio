@@ -2,9 +2,10 @@ import { groq } from "next-sanity";
 import { notFound } from "next/navigation";
 import { Project } from "@/types/project-types";
 import { client } from "@/sanity/lib/client";
+import ProjectView from "@/views/project-view";
 
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const blog: Project = await client.fetch(
+  const project: Project = await client.fetch(
     groq`*[_type == "project" && slug.current == $slug][0] {
       ...,
       "slug": slug.current,
@@ -16,12 +17,8 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     { slug: params.slug }
   );
 
-  if (!blog) return notFound();
+  if (!project) return notFound();
 
-  return(
-    <div>
-      <h1 className="text-white">{blog.title}</h1>
-      <p className="text-white">{blog.description}</p>
-    </div>
-  ) 
+
+return <ProjectView  project={project} />;
 }
